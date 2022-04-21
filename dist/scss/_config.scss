@@ -1,0 +1,64 @@
+/** @format */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin displayNew {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin centering {
+  display: flex;
+  align-items: center;
+}
+
+@mixin displayImage {
+  width: 72px;
+  height: 67px;
+  border-radius: 10px;
+}
+@mixin seasonImage {
+  width: 60px;
+  height: 51.43px;
+  // border-radius: 10px;
+}
+
+@mixin h1 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #00939c;
+  text-align: center;
+  padding: 15px;
+}
+
+@mixin result-h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: $primary_color;
+}
+
+@mixin result-span {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+$primary_color: #fff;
+$background_color: #10abb4;

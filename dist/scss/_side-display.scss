@@ -1,0 +1,89 @@
+/** @format */
+
+.side-display {
+  width: 20%;
+  background: #0d1317;
+  height: 100vh;
+  position: fixed;
+  left: 80%;
+  // border: 2px solid red;
+}
+
+.side-details {
+  padding: 10px;
+}
+
+.soundtrack-name {
+  h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    color: #aeaeae;
+  }
+}
+
+.soundtrack-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h2 {
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: capitalize;
+    line-height: 20px;
+    color: #aeaeae;
+    opacity: 0.6;
+
+    span {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-style: italic;
+      margin-left: 50px;
+      opacity: 0.4;
+    }
+  }
+}
+
+.soundtrack-description {
+  padding: 10px;
+  margin: 10px 0px;
+  p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 131%;
+    letter-spacing: 0.065em;
+    color: #aeaeae;
+    opacity: 0.7;
+  }
+}
+
+.view-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  button {
+    padding: 5px;
+    width: 70%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    color: rgba(255, 255, 255, 0.81);
+    background: $background_color;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+  }
+}

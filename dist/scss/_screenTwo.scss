@@ -1,0 +1,82 @@
+/** @format */
+.screen-2 {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  background-color: azure;
+
+  .screen-container {
+    margin-left: 9%;
+    width: 83%;
+    padding: 5% 0;
+  }
+}
+.movie-selection-screen {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border-radius: 0px;
+  justify-content: space-around;
+  flex-direction: row;
+  @include centering;
+  padding: 5px;
+  background: $background_color;
+  border-radius: 0px;
+
+  .movie-name-screen {
+    @include displayNew;
+    @include centering;
+    flex-direction: row;
+
+    .movie-thumbnail {
+      img {
+        width: 120px;
+        padding: 0 10px;
+      }
+    }
+
+    h2 {
+      margin-left: 15px;
+      @include result-h2;
+      font-size: 30px;
+      line-height: 20px;
+
+      span {
+        @include result-span;
+      }
+    }
+  }
+}
+.search-output {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .track-list {
+    padding: 10px 0px;
+  }
+}
+
+.search-season {
+  .search-movie {
+    @include displayNew;
+    justify-content: space-around;
+    flex-direction: row;
+    @include centering;
+    background-color: #f2f1;
+    padding: 10px 0;
+    .season-movie {
+      @include centering;
+
+      img {
+        @include seasonImage;
+      }
+
+      h2 {
+        @include result-h2;
+        margin-left: 15px;
+        font-size: 17px;
+        color: #aeaeae;
+      }
+    }
+  }
+}

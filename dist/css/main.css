@@ -1,0 +1,786 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/** @format */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/** @format */
+body {
+  position: relative;
+  font-family: "poppins", sans-serief;
+  line-height: 1.7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #000;
+  overflow: hidden;
+}
+
+/** @format */
+.side-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+  height: 100vh;
+  background: #0d1317;
+}
+
+.side-nav {
+  position: absolute;
+  width: 70px;
+  height: 400px;
+  left: 55px;
+  top: 100px;
+  background: #302f36;
+  border-radius: 40px;
+}
+
+.side-nav ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: start;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 15px;
+}
+
+.side-nav ul li a {
+  width: 80px;
+  padding: 45px 25px;
+  display: block;
+}
+
+.side-nav ul li a img {
+  width: 24px;
+  height: 24px;
+}
+
+.side-nav ul li a:hover {
+  background-color: rgba(10, 103, 108, 0.7);
+  line-height: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+.side-profile img {
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+}
+
+/** @format */
+.container {
+  position: relative;
+  width: 65%;
+  height: 100vh;
+}
+
+.container_search {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 10%;
+  right: 3px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_search label img {
+  height: 25px;
+}
+
+.container_search input {
+  width: 75%;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.container_search input ::-webkit-input-placeholder {
+  font-size: 20px;
+}
+
+.container_search input :-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.container_search input ::-ms-input-placeholder {
+  font-size: 20px;
+}
+
+.container_search input ::placeholder {
+  font-size: 20px;
+}
+
+.container_search button {
+  padding: 7px;
+  width: 22%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 37px;
+  color: rgba(255, 255, 255, 0.81);
+  background: #10abb4;
+  border-radius: 0px 0px 5px 0px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+input:-ms-input-placeholder {
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+input::-ms-input-placeholder {
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+input::placeholder {
+  font-size: 17px;
+  opacity: 0.3;
+}
+
+.container-header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 150px;
+  top: 9%;
+  left: 10%;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.815)), to(rgba(0, 0, 0, 0.301))), url(../images/header-bg.png) center/cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.301)), url(../images/header-bg.png) center/cover;
+}
+
+.container-header .header-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 100px 20px;
+  color: #fbfff1;
+}
+
+.container-header .header-play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-header .header-play span {
+  height: 60px;
+  border: 1px solid #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.container-header .header-play img {
+  width: 20px;
+}
+
+.container-display {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  top: 35%;
+  left: 89px;
+}
+
+.popular-movies {
+  position: relative;
+  width: 40%;
+  border-radius: 30px;
+}
+
+.popular-movies .popular-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular-movies .popular-header h1 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #00939c;
+  text-align: center;
+  padding: 15px;
+}
+
+.popular-movies .popular-header img {
+  width: 16px;
+}
+
+.popular-movies .highlight {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  left: 50%;
+  bottom: 10px;
+  border-radius: 50%;
+  background: #47fcea;
+}
+
+.movie-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  background: #10abb4;
+  border-radius: 15px;
+}
+
+.movie-selection .movie-thumbnail {
+  width: 72px;
+  height: 67px;
+}
+
+.movie-selection .movie-thumbnail img {
+  width: 72px;
+  height: 67px;
+  border-radius: 10px;
+}
+
+.movie-selection .movie-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie-selection .movie-name h2 {
+  margin-left: 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 20px;
+}
+
+.movie-selection .movie-name span {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.movie-selection .play img {
+  width: 15px;
+}
+
+.season-section {
+  padding-top: 10px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.season-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.season-list img {
+  width: 60px;
+  height: 51.43px;
+}
+
+.season-list .season-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.season-list .season-name h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 17px;
+  color: #aeaeae;
+}
+
+.season-list .play img {
+  width: 10px;
+}
+
+.songs-list {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.soundtrack-name {
+  color: #aeaeae;
+  padding: 20px;
+  width: 100%;
+}
+
+.season h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+  font-weight: 500;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.track-list {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.track-list .track-thumbnail img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.track-list .track-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.track-list .track-name h2 {
+  margin-left: 15px;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.track-list .track-name h2 span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aeaeae;
+  opacity: 0.4;
+  text-transform: capitalize;
+}
+
+.track-list .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.track-list .play img {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.container-footer {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+}
+
+.container-footer input[type="range"] {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  height: 3px;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.acessories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.acessories .controls img {
+  margin-left: 10px;
+}
+
+.acessories .platforms img {
+  margin-right: 5px;
+}
+
+/** @format */
+.side-display {
+  width: 20%;
+  background: #0d1317;
+  height: 100vh;
+  position: fixed;
+  left: 80%;
+}
+
+.side-details {
+  padding: 10px;
+}
+
+.soundtrack-name h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  color: #aeaeae;
+}
+
+.soundtrack-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.soundtrack-details h2 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: capitalize;
+  line-height: 20px;
+  color: #aeaeae;
+  opacity: 0.6;
+}
+
+.soundtrack-details h2 span {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: italic;
+  margin-left: 50px;
+  opacity: 0.4;
+}
+
+.soundtrack-description {
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.soundtrack-description p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 131%;
+  letter-spacing: 0.065em;
+  color: #aeaeae;
+  opacity: 0.7;
+}
+
+.view-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.view-more button {
+  padding: 5px;
+  width: 70%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 37px;
+  color: rgba(255, 255, 255, 0.81);
+  background: #10abb4;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+/** @format */
+.screen-2 {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  background-color: azure;
+}
+
+.screen-2 .screen-container {
+  margin-left: 9%;
+  width: 83%;
+  padding: 5% 0;
+}
+
+.movie-selection-screen {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border-radius: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  background: #10abb4;
+  border-radius: 0px;
+}
+
+.movie-selection-screen .movie-name-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.movie-selection-screen .movie-name-screen .movie-thumbnail img {
+  width: 120px;
+  padding: 0 10px;
+}
+
+.movie-selection-screen .movie-name-screen h2 {
+  margin-left: 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.movie-selection-screen .movie-name-screen h2 span {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #aeaeae;
+}
+
+.search-output {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.search-output .track-list {
+  padding: 10px 0px;
+}
+
+.search-season .search-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f1;
+  padding: 10px 0;
+}
+
+.search-season .search-movie .season-movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-season .search-movie .season-movie img {
+  width: 60px;
+  height: 51.43px;
+}
+
+.search-season .search-movie .season-movie h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 17px;
+  color: #aeaeae;
+}
+/*# sourceMappingURL=main.css.map */
